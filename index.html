@@ -76,22 +76,43 @@
              <h3>Поиск гостиницы в Седоне</h3>
                   <form class="date" method="post" action="#">
                     <p>
-                      <label for="date-a">Дата заезда</label>
-                      <input id="date-a" type="24.04.2017" name="date" placeholder="24 апреля 2017">
+                        <label for="search-date-from">Дата заезда</label>
+                      <input id="search-date-from" type="text" name="date-from" value="" placeholder="24 апреля 2017">
+                       <button type="button" class="button date-button">
+                          <span class="visually-hidden">Календарь</span>
+                            <!--иконка календаря-->
+                       </button>
                     </p>
                     <p>
-                      <label for="date-b">Дата выезда</label>
-                      <input id="date-b" type="04.06.2017" name="date" placeholder="4 июля 2017">
+                      <label for="search-date-to">Дата выезда</label>
+                      <input id="search-date-to" type="text" name="date-to" value="" placeholder="4 июля 2017">
+                       <button type="button" class="button date-button">
+                          <span class="visually-hidden">Календарь</span>
+                            <!--иконка календаря-->
+                       </button>
                     </p>
-                    <p>
-                       <label for="number">Взрослые</label>
-                       <input type="number" id="number" name="number"  value="2">
-                    </p>
-                    <p>
-                        <label for="number">Дети</label>
-                        <input type="number" id="number" name="number"  value="0">
+                    <p class="search-item search-item-number">
+                       <label for="search-adults">Взрослые:</label>
+                          <button type="button" class="button number-button-min">
+                             <span class="visually-hidden">Меньше</span>
+                          </button>
+                       <input type="text" name="adults" value="" placeholder="2" id="search-adults">
+                          <button type="button" class="button number-button-plus">
+                             <span class="visually-hidden">Больше</span>
+                          </button>
                      </p>
-                      <button type="submit">Найти</button>       
+                     <p class="search-item search-item-number">
+                        <label for="search-children">Дети:</label>
+                        <button type="button" class="button number-button-min">
+                           <span class="visually-hidden">Меньше</span>
+                        </button>
+                        <input type="text" name="children" value="" placeholder="0" id="search-children">
+                           <button type="button" class="button number-button-plus">
+                              <span class="visually-hidden">Больше</span>
+                           </button>
+                     </p>   
+                      <button type="submit">Найти</button>
+                </form>
           </section> 
       </main> 
      <footer class="main-footer">
